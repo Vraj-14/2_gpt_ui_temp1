@@ -1,0 +1,10 @@
+PDF_PATH = "mmchoti.pdf"
+TEXT_CHUNKS_JSONL = "text_chunks.jsonl"
+FAISS_INDEX_PATH = "faiss_index.idx"
+EMBEDDINGS_PATH = "embeddings.npy"
+EMBEDDER_MODEL = "BAAI/bge-base-en-v1.5"
+TAPAS_MODEL = "google/tapas-base-finetuned-wtq"
+OLLAMA_MODEL = "qwen3:8b"
+TOP_K = 5
+CHUNK_SIZE = 500
+CHUNK_OVERLAP = 100

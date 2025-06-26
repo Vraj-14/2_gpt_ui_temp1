@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chat with your Docs</title>
+  <link rel="stylesheet" href="static/style.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Sidebar -->
+    <div id="sidebar">
+      <h2>📚 History</h2>
+      <ul id="history"></ul>
+    </div>
+
+    <!-- Main Content -->
+    <div id="main">
+      <div class="text-center">
+        <h1 class="title">
+          <span id="title-part1" class="title-part1">Chat with your Docs</span><br>
+          <span id="title-part2" class="title-part2">INTELLIGENTLY</span>
+        </h1>
+        <p class="text-secondary">Upload a PDF and Start asking questions</p>
+      </div>
+
+      <!-- Upload Section -->
+      <form id="upload-form">
+        <label for="file-input" class="custom-file-label">
+          <span>Select PDF file</span>
+          <input type="file" id="file-input" accept=".pdf" class="hidden">
+        </label>
+        <button type="submit" class="upload-btn">📤 Upload PDF</button>
+      </form>
+
+      <div id="upload-status"></div>
+      <div id="loader" class="hidden"></div>
+
+      <!-- Chat Input Section -->
+      <div class="ask-section">
+        <form id="chat-form" class="chat-input-box" onsubmit="return false;">
+          <input
+            type="text"
+            id="question-input"
+            placeholder="Type your question..."
+          />
+          <button id="ask-btn" type="submit">⮝</button>
+        </form>
+        <div id="chat-area"></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="static/script.js"></script>
+</body>
+</html>
